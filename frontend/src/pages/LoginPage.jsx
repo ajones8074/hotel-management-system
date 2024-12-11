@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Button, IconButton, TextField, } from'@mui/material';
-import { Visibility, VisibilityOff } from '@mui/icons-material';
+import { Button } from'@mui/material';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo512.png';
 import AuthCard from "../components/AuthCard";
 import AuthInput from "../components/AuthInput";
 import SubmitButton from "../components/SubmitButton";
