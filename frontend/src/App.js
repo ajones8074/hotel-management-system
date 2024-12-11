@@ -1,5 +1,11 @@
-import axios from 'axios'
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import axios from 'axios';
+import MainPage from './pages/MainPage';
+import ErrorPage from './pages/ErrorPage';
+import LoginPage from './pages/LoginPage'
+// import logo from './assets/logo512.png';
+import RegisterPage from './pages/RegisterPage';
 
 function App() {
     const [message, setMessage] = useState("")
@@ -13,10 +19,14 @@ function App() {
     })
 
     return (
-    <div className="App">
-        <h1>I am your react app</h1>
-        <div>{message}</div>
-    </div>
+        <Router>
+            <Routes>
+                <Route path='/' element={<MainPage />} />
+                <Route path='*' element={<ErrorPage />} />
+                <Route path='/login' element={<LoginPage />} />
+                <Route path='/register' element={<RegisterPage />} />
+            </Routes>
+        </Router>
     );
 }
 
