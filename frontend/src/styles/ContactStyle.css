@@ -1,0 +1,9 @@
+.contact-page {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    padding: '10px';
+}

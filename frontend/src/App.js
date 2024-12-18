@@ -6,6 +6,7 @@ import ErrorPage from './pages/ErrorPage';
 import LoginPage from './pages/LoginPage'
 // import logo from './assets/logo512.png';
 import RegisterPage from './pages/RegisterPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
     const [message, setMessage] = useState("")
@@ -25,6 +26,7 @@ function App() {
                 <Route path='*' element={<ErrorPage />} />
                 <Route path='/login' element={<LoginPage />} />
                 <Route path='/register' element={<RegisterPage />} />
+                <Route path='/contact' element={<ContactPage />} />
             </Routes>
         </Router>
     );

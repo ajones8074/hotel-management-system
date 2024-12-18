@@ -17,6 +17,11 @@ function MainPage() {
                     Log In
                 </button>
             </Link>
+            <Link to='/contact'>
+                <button className="btn btn-primary mt-3 px-4 py-2">
+                    Contact Us
+                </button>
+            </Link>
         </div>
     );
 }
